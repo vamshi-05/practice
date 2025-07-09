@@ -6,7 +6,7 @@ const sampleRouter = require('./route');
 
 
 app.get('/', (req, res) => {
-    res.send('Hello World!!');
+    res.send('Home page');
 });
 
 app.use('/sample', sampleRouter);
