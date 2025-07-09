@@ -1,10 +1,15 @@
 const express = require('express');
 const app = express();
 
+app.use(express.json());
+const sampleRouter = require('./route');S
+
 
 app.get('/', (req, res) => {
-    res.send('Hello World');
+    res.send('Hello World!!');
 });
+
+app.use('/sample', sampleRouter);
 
 app.get('/about', (req, res) => {
     res.send('About page');
