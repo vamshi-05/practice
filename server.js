@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.use(express.json());
-const sampleRouter = require('./route');S
+const sampleRouter = require('./route');
 
 
 app.get('/', (req, res) => {
